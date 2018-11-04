@@ -5,4 +5,5 @@ type Path struct {
 	Description string    `json:"description,omitempty" yaml:"description,omitempty"`
 	Get         Operation `json:"get,omitempty" yaml:"get,omitempty"`
 	Post        Operation `json:"post,omitempty" yaml:"post,omitempty"`
+	Delete      Operation `json:"delete,omitempty" yaml:"delete,omitempty"`
 }
