@@ -1,6 +1,6 @@
 #!/bin/bash
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+cd $DIR/..
 echo "******************"
-echo "Formatting $DIR/../swagger"
-cd $DIR/../swagger
-go fmt
+echo "Formatting"
+go fmt $(go list ./... )
